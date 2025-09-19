@@ -6,7 +6,7 @@ from sklearn.pipeline import Pipeline
 import joblib
 
 # Load the dataset
-df = pd.read_csv("data/IMDB Dataset.csv")  # path relative to backend folder
+df = pd.read_csv("data/IMDB Dataset.csv")  
 
 # Encode labels: positive=1, negative=0
 df["label"] = df["sentiment"].map({"positive": 1, "negative": 0})
